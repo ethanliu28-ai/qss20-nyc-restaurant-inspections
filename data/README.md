@@ -7,9 +7,7 @@ for the actual data.
 
 ## Getting the raw file
 
-1. Download **DOHMH New York City Restaurant Inspection Results** from NYC Open Data:
-   https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j
-   (use the page's **Export → CSV** option).
+1. Download https://www.kaggle.com/datasets/new-york-city/nyc-inspections?resource=download 
 2. Save it here as exactly:
    `data/DOHMH_New_York_City_Restaurant_Inspection_Results.csv`
 3. Run the notebooks in order starting from `code/01_data_pull_clean.ipynb` — each one reads
