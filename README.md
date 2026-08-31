@@ -4,6 +4,8 @@ NYC Restaurant Inspection Disparities
 
 This project asks whether NYC restaurant inspection outcomes vary systematically rather than purely reflecting restaurant-level food safety practices. One shared OLS model of inspection SCORE tests three predictor groups at once: (1) cuisine group, (2) keywords in the restaurant's own name (e.g. "bistro," "organic," "express"), and (3) the median household income of the zip code the restaurant sits in. A separate, independent analysis then checks whether scores themselves behave strangely right at NYC's legal A/B and B/C grade cutoffs. Together these test whether NYC's inspection system operates as a neutral arbiter of food safety or reflects economic and geographic inequality across the five boroughs.
 
+Public Website: https://ethan-liu-research.vercel.app/ 
+
 Setup
 
 1. `pip install -r requirements.txt`
