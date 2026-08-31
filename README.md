@@ -32,7 +32,9 @@ Note on unit of analysis: 01 only keeps 8 columns (camis, dba, boro, zipcode, cu
 
 Data
 
-Source: [NYC DOHMH Restaurant Inspection Results]([https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j](https://www.kaggle.com/datasets/new-york-city/nyc-inspections?resource=download ) (NYC Open Data), read from data/DOHMH_New_York_City_Restaurant_Inspection_Results.csv. Not tracked in git — the raw file is ~150MB, past GitHub's per-file limit. See data/README.md for exactly how to download it and what else lives in data/ once the pipeline has run.
+Source: NYC Restaurant Inspections https://www.kaggle.com/datasets/new-york-city/nyc-inspections?resource=download 
+
+Read from data/DOHMH_New_York_City_Restaurant_Inspection_Results.csv. Not tracked in git — the raw file is ~150MB, past GitHub's per-file limit. See data/README.md for exactly how to download it and what else lives in data/ once the pipeline has run.
 
 Zip-code median household income: utils.INCOME_DATA_SOURCE currently = "fallback". Intended source is the Census Bureau's American Community Survey 5-year estimates by ZCTA, pulled via the public Census API (requires a free key — see utils._census_api_key) and cached to data/median_income_by_zip.csv. Until a key is available, income comes from utils.NYC_ZIP_INCOME_TIER_FALLBACK, a hand-built approximation from general knowledge of NYC neighborhood income patterns — NOT official Census data. This is a known limitation; flip INCOME_DATA_SOURCE to "real" and rerun 02 (then 03c) once a key is available.
 
