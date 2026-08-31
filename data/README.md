@@ -20,7 +20,6 @@ for the actual data.
 | `DOHMH_New_York_City_Restaurant_Inspection_Results.csv` | *(you, manually — see above)* | Raw inspection data, one row per cited violation |
 | `cleaned_inspections.csv` | `code/01_data_pull_clean.ipynb` | Deduplicated, standardized version of the raw file |
 | `model_ready_inspections.csv` | `code/02_analysis.ipynb` | Row-level data with cuisine/keyword/income predictors attached, for the `03a`/`03b`/`03c` plots |
-| `median_income_by_zip.csv` | `code/utils.py` (`get_income_by_zip`) | Cached Census ACS pull, only created if `utils.INCOME_DATA_SOURCE = "real"` and a Census API key is available |
 
 None of these are tracked in git — they're all listed in `.gitignore` and get regenerated
 by re-running the notebooks.
