@@ -216,7 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data files (too large / generated -- see data/README.md for how to get them)
 data/DOHMH_New_York_City_Restaurant_Inspection_Results.csv
 data/cleaned_inspections.csv
-data/DOHMH_New_York_City_Restaurant_Inspection_Results.csv
-data/cleaned_inspections.csv
+data/model_ready_inspections.csv
+data/median_income_by_zip.csv
+data/*.xlsx
+.census_api_key
+
+# Claude Code local project config
+.claude/
+
+# Standalone React demo site -- deployed separately (Vercel), not part of this repo
+website/
